@@ -1,5 +1,5 @@
-import Dadjokes from "./Dadjokes.js";
-import Bikes from "./Bikes.js";
+import Dadjokes from "./dadjokes.js";
+import Bikes from "./bikes.js";
 
 function App() {
   return (

@@ -15,7 +15,6 @@ function Bikes () {
     return <div className="bike">
         <h2>city bikes:</h2>
         {
-            
             bikeStations.map((stationData) => <Station key={stationData.name} data={stationData} />)
         }
     </div>
