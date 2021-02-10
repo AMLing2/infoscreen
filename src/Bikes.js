@@ -13,8 +13,10 @@ function Bikes () {
 
     
     return <div className="bike">
+        <h2>city bikes:</h2>
         {
-            bikeStations.map((stationData) => <Station data={stationData} />)
+            
+            bikeStations.map((stationData) => <Station key={stationData.name} data={stationData} />)
         }
     </div>
 }
@@ -23,5 +25,5 @@ export default Bikes;
 
 function Station (props) {
     const {data} = props;
-    return <div className="station">Stations</div>;
+    return <div className="station">{data.name}: {data.bikesAvailable} - {data.spacesAvailable}</div>;
 }
